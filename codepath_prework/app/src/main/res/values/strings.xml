@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">codepath_prework</string>
+    <string name="andrew_intro">Hello World! My namne is Andrew and I love Android Development.</string>
+    <string name="button_text">Say hello</string>
+</resources>
