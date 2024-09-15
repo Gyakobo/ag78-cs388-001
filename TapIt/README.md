@@ -1,43 +1,60 @@
-# Android Prework - *Prework Assignment*
+# Lab 1: Tap Counter App
 
-Submitted by: **Andrew Gyakobo**
+Course Link: [CodePath Android Course](https://courses.codepath.org/courses/and102/unit/1#!labs)
 
-**Prework Assignment** is an android app that shows an image and introductory message, and allows pressing a button to display a Toast.
+Submitted by: **Your Name Here** <!-- Replace 'Your Name Here' with your actual name -->
 
-Time spent: **1.5** hours spent in total
+**Tap Counter App** is an Android app inspired by idle tap games, allowing users to accumulate points through taps, which can be exchanged for upgrades.
 
-## Required Features
+Time spent: **X** hours spent in total <!-- Replace 'X' with the number of hours you spent on this project -->
+
+## Application Features
+
+### Required Features
 
 The following **required** functionality is completed:
 
-* [x] Image and introductory message displayed on screen
-* [x] Button displayed on screen
-* [x] Toast with message appears when button is pressed
+- [ ] (2 pts) **User can see a number displayed on the screen. The number starts at 0.**  
+  - ![Image/GIF showing the initial display of the number](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
 
-The following **optional** features are implemented:
+- [ ] (2 pts) **User can tap on a button to see the number displayed increase by 1.**  
+  - ![Image/GIF showing the number increase on button tap](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
 
-* [ ] List anything else that you can get done to improve the app functionality!
+### Stretch Features
 
-## Video Walkthrough
+The following **stretch** functionality is implemented:
 
-Here's a walkthrough of implemented features:
+- [ ] (2 pts) **User can exchange the number of taps accumulated for upgrades:**
+  - X taps for an upgrade that makes each tap count as 2 taps. (Default: 100 taps)
+    - Use a Toast for positive (purchase) or negative (can't afford) notifications.
+    - ![Image/GIF showing the upgrade process](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
 
-<img src='lab1_gif.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+- [ ] (2 pts) **User can exchange taps for a custom icon button.**  
+  - X taps for a custom icon button. (Default: 100 taps)
+    - Use a Toast for positive (purchase) or negative (can't afford) notifications.
+    - ![Image/GIF showing the icon button customization](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+- [ ] (2 pts) **User can customize the app's theme (e.g., a dog-themed background with a paw print button).**  
+  - ![Image/GIF showing theme customization](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
+
+- [ ] (+2 bonus pts) **User has progressively difficult goals to reach in terms of the number of taps accumulated.**  
+  - Display each goal on the screen, and track the total number of goals reached.
+  - Use a Toast to notify of a reached goal.
+  - ![Image/GIF showing goals and progress](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
 
 ## Notes
 
-The only challenge I faced was setting up the emulator.
+Describe any challenges encountered while building the app. <!-- Replace this with your specific challenges and experiences -->
+
+## Resources
+
+- [ConstraintLayout documentation](https://developer.android.com/training/constraint-layout)
+- [Displaying Toasts](https://guides.codepath.com/android/Displaying-Toasts)
 
 ## License
 
-    Copyright 2024 Andrew Gyakobo
+```plaintext
+    Copyright [yyyy] [name of copyright owner]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
