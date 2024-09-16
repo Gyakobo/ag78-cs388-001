@@ -7,6 +7,7 @@ import android.view.View
 
 // Miscellaneous
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -23,6 +24,8 @@ class MainActivity : AppCompatActivity() {
 
         val textView = findViewById<TextView>(R.id.textView)
 
+        textView.text = counter.toString()
+
         button.setOnClickListener {
             // Toast.makeText(it.context, "Clicked Button!", Toast.LENGTH_SHORT).show()
             counter++
@@ -31,17 +34,27 @@ class MainActivity : AppCompatActivity() {
 
         val upgradeButton = findViewById<Button>(R.id.UpgradeStepCounter)
 
+        var reached_hundred = true
+
         button.setOnClickListener {
-            // Toast.makeText(it.context, "Clicked Button!", Toast.LENGTH_SHORT).show()
             counter++
             textView.text = counter.toString()
+
 
             if (counter >= 100) {
 
                 // Show upgrade button and set onClickListener
                 upgradeButton.visibility = View.VISIBLE
+
+                // Switched to double counter
+                if (reached_hundred) {
+                    Toast.makeText(it.context, "Reached the 100th count", Toast.LENGTH_SHORT).show()
+                    reached_hundred = false
+                }
+
                 upgradeButton.setOnClickListener {
-                    // button.text = "Add 2"
+                    // Switched to double counter
+                    Toast.makeText(it.context, "Switched to Double Counter", Toast.LENGTH_SHORT).show()
 
                     // Update original button to add 2 instead of `
                     button.setOnClickListener {
