@@ -1,6 +1,9 @@
 #!/bin/bash
 
+branch="lab1"
+
 # Prompt the user for input
+echo "Currently operating on branch: $branch"
 echo "Enter a commit comment:"
 read user_command
 
@@ -13,4 +16,4 @@ fi
 # Run the command provided by the user
 eval "sudo git add ."
 eval "sudo git commit -m \"$user_command\""
-eval "sudo git push -u origin main"
+eval "sudo git push -u origin $branch"
