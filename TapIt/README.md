@@ -20,6 +20,7 @@ The following **required** functionality is completed:
 - [x] (2 pts) **User can tap on a button to see the number displayed increase by 1.**  
   - ![Image/GIF showing the number increase on button tap](https://github.com/Gyakobo/ag78-cs388-001/blob/lab1/TapIt/gif/animation_2.gif) <!-- Replace this link with your actual image/GIF link -->
 
+
 ### Stretch Features
 
 The following **stretch** functionality is implemented:
