@@ -15,10 +15,10 @@ Time spent: **1.5** hours spent in total <!-- Replace 'X' with the number of hou
 The following **required** functionality is completed:
 
 - [x] (2 pts) **User can see a number displayed on the screen. The number starts at 0.**  
-  - ![Image/GIF showing the initial display of the number](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
+  - ![Image/GIF showing the initial display of the number](https://github.com/Gyakobo/ag78-cs388-001/blob/lab1/TapIt/gif/animation_1.gif) <!-- Replace this link with your actual image/GIF link -->
 
 - [x] (2 pts) **User can tap on a button to see the number displayed increase by 1.**  
-  - ![Image/GIF showing the number increase on button tap](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
+  - ![Image/GIF showing the number increase on button tap](https://github.com/Gyakobo/ag78-cs388-001/blob/lab1/TapIt/gif/animation_2.gif) <!-- Replace this link with your actual image/GIF link -->
 
 ### Stretch Features
 
@@ -27,20 +27,20 @@ The following **stretch** functionality is implemented:
 - [x] (2 pts) **User can exchange the number of taps accumulated for upgrades:**
   - X taps for an upgrade that makes each tap count as 2 taps. (Default: 100 taps)
     - Use a Toast for positive (purchase) or negative (can't afford) notifications.
-    - ![Image/GIF showing the upgrade process](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
+    - ![Image/GIF showing the upgrade process](https://github.com/Gyakobo/ag78-cs388-001/blob/lab1/TapIt/gif/animation_3_4_6.gif) <!-- Replace this link with your actual image/GIF link -->
 
 - [x] (2 pts) **User can exchange taps for a custom icon button.**  
   - X taps for a custom icon button. (Default: 100 taps)
     - Use a Toast for positive (purchase) or negative (can't afford) notifications.
-    - ![Image/GIF showing the icon button customization](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
+    - ![Image/GIF showing the icon button customization](https://github.com/Gyakobo/ag78-cs388-001/blob/lab1/TapIt/gif/animation_3_4_6.gif) <!-- Replace this link with your actual image/GIF link -->
 
 - [x] (2 pts) **User can customize the app's theme (e.g., a dog-themed background with a paw print button).**  
-  - ![Image/GIF showing theme customization](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
+  - ![Image/GIF showing theme customization](https://github.com/Gyakobo/ag78-cs388-001/blob/lab1/TapIt/gif/animation_5.gif) <!-- Replace this link with your actual image/GIF link -->
 
 - [x] (+2 bonus pts) **User has progressively difficult goals to reach in terms of the number of taps accumulated.**  
   - Display each goal on the screen, and track the total number of goals reached.
   - Use a Toast to notify of a reached goal.
-  - ![Image/GIF showing goals and progress](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
+  - ![Image/GIF showing goals and progress](https://github.com/Gyakobo/ag78-cs388-001/blob/lab1/TapIt/gif/animation_3_4_6.gif) <!-- Replace this link with your actual image/GIF link -->
 
 ## Notes
 
