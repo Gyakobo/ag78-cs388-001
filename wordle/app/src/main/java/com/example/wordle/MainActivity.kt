@@ -1,6 +1,7 @@
 package com.example.wordle
 
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -10,6 +11,7 @@ import androidx.core.view.WindowInsetsCompat
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.ListView
 import android.widget.Toast
 import org.w3c.dom.Text
 
@@ -33,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    var wordToGuess = "AREA";
+    var wordToGuess: String = "AREA";
     // var wordToGuess: String = FourLetterWordList.getRandomFourLetterWord();
 
     private fun checkGuess(guess: String) : String {
@@ -52,6 +54,9 @@ class MainActivity : AppCompatActivity() {
         return result
     }
 
+    private lateinit var arrayAdapter: ArrayAdapter<String>;
+    private var itemList = mutableListOf<String>();
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -59,7 +64,10 @@ class MainActivity : AppCompatActivity() {
 
         val inputWord: EditText = findViewById(R.id.input_word);
         val submitButton: Button = findViewById(R.id.submit_button);
-        val resultText: TextView = findViewById(R.id.result_text);
+        val resultText: ListView = findViewById(R.id.result_text);
+
+        arrayAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, itemList);
+        resultText.adapter = arrayAdapter;
 
         submitButton.setOnClickListener {
             val guess = inputWord.text.toString().uppercase();
@@ -69,11 +77,13 @@ class MainActivity : AppCompatActivity() {
             } else {
                 val result = checkGuess(guess);
 
-                resultText.text = result;
+                // itemList.add(result);
+                addItemToList(result)
 
                 // See if the client had won
                 if (guess == wordToGuess) {
-                    resultText.text = "Congrats!"
+                    // itemList.add("Congrats!")
+                    addItemToList("Congrats!")
                     wordToGuess = FourLetterWordList.getRandomFourLetterWord();
                 }
             }
@@ -83,6 +93,13 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+    private fun addItemToList(item: String) {
+        itemList.add(item);
+        arrayAdapter.notifyDataSetChanged()
+    }
+
+
 }
 
 
