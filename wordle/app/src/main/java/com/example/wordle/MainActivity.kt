@@ -1,6 +1,7 @@
 package com.example.wordle
 
 import android.os.Bundle
+import android.text.Html
 import android.widget.ArrayAdapter
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +15,9 @@ import android.widget.TextView
 import android.widget.ListView
 import android.widget.Toast
 import org.w3c.dom.Text
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.style.ForegroundColorSpan
 
 class MainActivity : AppCompatActivity() {
 
@@ -41,12 +45,20 @@ class MainActivity : AppCompatActivity() {
     private fun checkGuess(guess: String) : String {
         var result = ""
         for (i in 0..3) {
+
+            // right letter in the right place - GREEN
             if (guess[i] == wordToGuess[i]) {
-                result += "O"
+                // result += "O"
+                var res = wordToGuess[i];
+                result += Html.fromHtml("<span style=\"color: green;\">$res</span>");
             }
+
+            // right letter in the wrong place - RED
             else if (guess[i] in wordToGuess) {
                 result += "+"
             }
+
+            // wrong letter - GRAY
             else {
                 result += "X"
             }
@@ -65,6 +77,7 @@ class MainActivity : AppCompatActivity() {
         val inputWord: EditText = findViewById(R.id.input_word);
         val submitButton: Button = findViewById(R.id.submit_button);
         val resultText: ListView = findViewById(R.id.result_text);
+        var counter = 1;
 
         arrayAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, itemList);
         resultText.adapter = arrayAdapter;
@@ -75,21 +88,23 @@ class MainActivity : AppCompatActivity() {
             if (guess.length != 4) {
                 Toast.makeText(this, "Enter a 4-letter word", Toast.LENGTH_SHORT).show()
             } else {
-                val result = checkGuess(guess);
+                // Inital Guess
+                addItemToList("Guess #$counter - $guess")
 
-                // itemList.add(result);
-                addItemToList(result)
+                // Checked guess
+                val result = checkGuess(guess);
+                addItemToList("Guess #$counter Check - $result")
 
                 // See if the client had won
                 if (guess == wordToGuess) {
-                    // itemList.add("Congrats!")
-                    addItemToList("Congrats!")
+                    // addItemToList("Congrats!")
+                    // addItemToList("Guess #$counter - $result")
                     wordToGuess = FourLetterWordList.getRandomFourLetterWord();
                 }
             }
 
             inputWord.text.clear();
-
+            counter+=1;
         }
 
     }
