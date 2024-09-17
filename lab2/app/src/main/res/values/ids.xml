@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="senderTv" type="id" />
+    <item name="titleTv" type="id" />
+    <item name="summaryTv" type="id" />
+</resources>
