@@ -44,8 +44,8 @@ class MainActivity : AppCompatActivity() {
     var wordToGuess: String = "AREA";
     // var wordToGuess: String = FourLetterWordList.getRandomFourLetterWord();
 
-    private fun checkGuess(guess: String) : SpannableStringBuilder {
-         val result: SpannableStringBuilder = SpannableStringBuilder();
+    private fun checkGuess(guess: String): String {
+        var result: String = "";
 
         for (i in 0..3) {
 
@@ -56,43 +56,43 @@ class MainActivity : AppCompatActivity() {
             if (guess[i] == wordToGuess[i]) {
                 // Apply color to "green"
 
-                result.append(res);
+                /*result.append(res);
                 result.setSpan(
                     ForegroundColorSpan(Color.GREEN), // Set the color to blue
                     i, // Start index of the word "blue"
                     i+1, // End index (exclusive)
                     Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-                )
+                )*/
 
-                // result += "O"
+                result += "O"
             }
 
             // right letter in the wrong place - RED
             else if (guess[i] in wordToGuess) {
                 // Apply color to "red"
-                result.append(res);
+                /*result.append(res);
                 result.setSpan(
                     ForegroundColorSpan(Color.RED), // Set the color to red
                     i, // Start index of the word "red"
                     i+1, // End index (exclusive)
                     Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-                )
+                )*/
 
-                // result += "+"
+                result += "+"
             }
 
             // wrong letter - GRAY
             else {
                 // Apply color to "gray"
-                result.append(res);
+                /*result.append(res);
                 result.setSpan(
                     ForegroundColorSpan(Color.GRAY), // Set the color to red
                     i, // Start index of the word "red"
                     i+1, // End index (exclusive)
                     Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-                )
+                )*/
 
-                // result += "X"
+                result += "X"
             }
         }
         return result
@@ -149,7 +149,6 @@ class MainActivity : AppCompatActivity() {
 
 
 }
-
 
 
 
