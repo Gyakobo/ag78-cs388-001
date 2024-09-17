@@ -14,9 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:layout_marginStart="4dp"
-        android:hint="Enter a 5-letter word"
+        android:hint="Enter a 4-letter word"
         android:inputType="text"
-        android:maxLength="5"
+        android:maxLength="4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/submit_button"
         app:layout_constraintStart_toStartOf="parent" />

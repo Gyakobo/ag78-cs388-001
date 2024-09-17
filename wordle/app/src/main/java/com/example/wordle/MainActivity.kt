@@ -33,7 +33,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    var wordToGuess: String = FourLetterWordList.getRandomFourLetterWord();
+    var wordToGuess = "AREA";
+    // var wordToGuess: String = FourLetterWordList.getRandomFourLetterWord();
 
     private fun checkGuess(guess: String) : String {
         var result = ""
@@ -63,17 +64,23 @@ class MainActivity : AppCompatActivity() {
         submitButton.setOnClickListener {
             val guess = inputWord.text.toString().uppercase();
 
-            if (guess.length != 5) {
+            if (guess.length != 4) {
                 Toast.makeText(this, "Enter a 4-letter word", Toast.LENGTH_SHORT).show()
             } else {
+                val result = checkGuess(guess);
 
+                resultText.text = result;
+
+                // See if the client had won
+                if (guess == wordToGuess) {
+                    resultText.text = "Congrats!"
+                    wordToGuess = FourLetterWordList.getRandomFourLetterWord();
+                }
             }
 
-
+            inputWord.text.clear();
 
         }
-
-
 
     }
 }
