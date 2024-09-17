@@ -6,6 +6,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
+// My Imports
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import android.widget.Toast
+import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,6 +33,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    var wordToGuess: String = FourLetterWordList.getRandomFourLetterWord();
+
     private fun checkGuess(guess: String) : String {
         var result = ""
         for (i in 0..3) {
@@ -47,10 +55,36 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val inputWord: EditText = findViewById(R.id.input_word);
+        val submitButton: Button = findViewById(R.id.submit_button);
+        val resultText: TextView = findViewById(R.id.result_text);
+
+        submitButton.setOnClickListener {
+            val guess = inputWord.text.toString().uppercase();
+
+            if (guess.length != 5) {
+                Toast.makeText(this, "Enter a 4-letter word", Toast.LENGTH_SHORT).show()
+            } else {
+
+            }
+
+
+
         }
+
+
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
