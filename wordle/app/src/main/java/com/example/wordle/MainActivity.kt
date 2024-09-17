@@ -20,6 +20,7 @@ import android.text.Spannable
 import android.text.SpannableString
 import android.text.SpannableStringBuilder
 import android.text.style.ForegroundColorSpan
+import android.view.View
 
 class MainActivity : AppCompatActivity() {
 
@@ -106,6 +107,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        val final_result: TextView = findViewById(R.id.result);
         val inputWord: EditText = findViewById(R.id.input_word);
         val submitButton: Button = findViewById(R.id.submit_button);
         val resultText: ListView = findViewById(R.id.result_text);
@@ -132,12 +134,24 @@ class MainActivity : AppCompatActivity() {
                 if (guess == wordToGuess) {
                     // addItemToList("Congrats!")
                     // addItemToList("Guess #$counter - $result")
-                    wordToGuess = FourLetterWordList.getRandomFourLetterWord();
+                    Toast.makeText(this, "You Won!", Toast.LENGTH_LONG).show()
+                    // wordToGuess = FourLetterWordList.getRandomFourLetterWord();
+                    final_result.text = wordToGuess;
+                    inputWord.visibility = View.INVISIBLE;
+                    submitButton.visibility = View.INVISIBLE;
                 }
+
+                else if (counter >= 3) {
+                    Toast.makeText(this, "You Lost!", Toast.LENGTH_LONG).show()
+                    final_result.text = wordToGuess;
+                    inputWord.visibility = View.INVISIBLE;
+                    submitButton.visibility = View.INVISIBLE;
+                }
+
+                counter+=1;
             }
 
             inputWord.text.clear();
-            counter+=1;
         }
 
     }
