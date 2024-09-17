@@ -1,5 +1,6 @@
 package com.example.wordle
 
+import android.graphics.Color
 import android.os.Bundle
 import android.text.Html
 import android.widget.ArrayAdapter
@@ -17,6 +18,7 @@ import android.widget.Toast
 import org.w3c.dom.Text
 import android.text.Spannable
 import android.text.SpannableString
+import android.text.SpannableStringBuilder
 import android.text.style.ForegroundColorSpan
 
 class MainActivity : AppCompatActivity() {
@@ -42,25 +44,55 @@ class MainActivity : AppCompatActivity() {
     var wordToGuess: String = "AREA";
     // var wordToGuess: String = FourLetterWordList.getRandomFourLetterWord();
 
-    private fun checkGuess(guess: String) : String {
-        var result = ""
+    private fun checkGuess(guess: String) : SpannableStringBuilder {
+         val result: SpannableStringBuilder = SpannableStringBuilder();
+
         for (i in 0..3) {
+
+            // Create a SpannableString
+            val res: Char = guess[i];
 
             // right letter in the right place - GREEN
             if (guess[i] == wordToGuess[i]) {
+                // Apply color to "green"
+
+                result.append(res);
+                result.setSpan(
+                    ForegroundColorSpan(Color.GREEN), // Set the color to blue
+                    i, // Start index of the word "blue"
+                    i+1, // End index (exclusive)
+                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+                )
+
                 // result += "O"
-                var res = wordToGuess[i];
-                result += Html.fromHtml("<span style=\"color: green;\">$res</span>");
             }
 
             // right letter in the wrong place - RED
             else if (guess[i] in wordToGuess) {
-                result += "+"
+                // Apply color to "red"
+                result.append(res);
+                result.setSpan(
+                    ForegroundColorSpan(Color.RED), // Set the color to red
+                    i, // Start index of the word "red"
+                    i+1, // End index (exclusive)
+                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+                )
+
+                // result += "+"
             }
 
             // wrong letter - GRAY
             else {
-                result += "X"
+                // Apply color to "gray"
+                result.append(res);
+                result.setSpan(
+                    ForegroundColorSpan(Color.GRAY), // Set the color to red
+                    i, // Start index of the word "red"
+                    i+1, // End index (exclusive)
+                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+                )
+
+                // result += "X"
             }
         }
         return result
@@ -81,6 +113,7 @@ class MainActivity : AppCompatActivity() {
 
         arrayAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, itemList);
         resultText.adapter = arrayAdapter;
+
 
         submitButton.setOnClickListener {
             val guess = inputWord.text.toString().uppercase();
