@@ -5,6 +5,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.RecyclerView
+
+lateinit var emails: List<Email>;
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        val recycleView = findViewById<RecyclerView>(R.id.);
 
     }
 }
