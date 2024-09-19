@@ -1,6 +1,6 @@
 #!/bin/bash
 
-branch="wordle"
+branch="lab2"
 
 # Prompt the user for input
 echo "Currently operating on branch: $branch"
