@@ -17,6 +17,7 @@ class EmailAdapter {
         val titleTextView: TextView
         val summaryTextView: TextView
 
+
         init {
             // TODO: Store each of the layout's views into
             // the public final member variables created above
