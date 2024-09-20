@@ -6,7 +6,7 @@ Submitted by: **Andrew Gyakobo** <!-- Replace 'Your Name Here' with your actual 
 
 **CodepathMail** is a simple email app clone inspired by Gmail, allowing users to scroll through a list of emails.
 
-Time spent: **X** hours spent in total <!-- Replace 'X' with the number of hours you spent on this project -->
+Time spent: **3** hours spent in total <!-- Replace 'X' with the number of hours you spent on this project -->
 
 ## Application Features
 
@@ -14,7 +14,7 @@ Time spent: **X** hours spent in total <!-- Replace 'X' with the number of hours
 
 The following **required** functionality is completed:
 
-- [ ] (4 pts) **User can scroll through a list of 10 emails.**
+- [x] (4 pts) **User can scroll through a list of 10 emails.**
   - Each email contains the following information:
     - Sender
     - Email title
@@ -46,7 +46,7 @@ Describe any challenges encountered while building the app. <!-- Replace this wi
 ## License
 
 ```plaintext
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2024 Andrew Gyakobo 
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
