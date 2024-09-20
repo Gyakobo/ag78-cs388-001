@@ -19,7 +19,7 @@ The following **required** functionality is completed:
     - Sender
     - Email title
     - Email summary
-  - ![Image/GIF showing the basic email list display](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
+  - ![Image/GIF showing the basic email list display](https://github.com/Gyakobo/ag78-cs388-001/blob/lab2/lab2/miscellaneous/Animation.gif) <!-- Replace this link with your actual image/GIF link -->
 
 ### Stretch Features
 
