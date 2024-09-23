@@ -11,6 +11,7 @@
         android:layout_width="200dp"
         android:layout_height="45dp"
         android:layout_marginStart="4dp"
+        android:textStyle="bold"
         android:hint="Item Name"
         app:layout_constraintBottom_toTopOf="@+id/etItemDescription"
         app:layout_constraintStart_toStartOf="parent" />
@@ -30,7 +31,7 @@
         android:id="@+id/etItemPrice"
         android:layout_width="99dp"
         android:layout_height="44dp"
-        android:hint="Item Price"
+        android:hint="Ex: 5.99"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/btnAddItem"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -41,6 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="4dp"
+        android:backgroundTint="@android:color/holo_blue_light"
         android:text="Add Item"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
