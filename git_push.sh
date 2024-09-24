@@ -1,6 +1,6 @@
 #!/bin/bash
 
-branch="lab2"
+branch="lab3"
 
 # Prompt the user for input
 echo "Currently operating on branch: $branch"
