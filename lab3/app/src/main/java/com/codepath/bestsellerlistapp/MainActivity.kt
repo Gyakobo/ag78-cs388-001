@@ -1,11 +1,7 @@
-package com.example.lab3
+package com.codepath.bestsellerlistapp
 
-import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-
+import android.os.Bundle
 import com.codepath.bestsellerlistapp.R.id
 
 /**
