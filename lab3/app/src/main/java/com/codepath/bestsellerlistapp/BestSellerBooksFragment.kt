@@ -15,6 +15,7 @@ import com.codepath.asynchttpclient.RequestParams
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
 import com.codepath.bestsellerlistapp.R
 import okhttp3.Headers
+import org.json.JSONObject
 
 // --------------------------------//
 // CHANGE THIS TO BE YOUR API KEY  //
@@ -70,8 +71,10 @@ class BestSellerBooksFragment : Fragment(), OnListFragmentInteractionListener {
                 progressBar.hide()
 
                 //TODO - Parse JSON into Models
+                val resultsJSON : JSONObject = json.jsonObject.get("results") as JSONObject
+                val booksRawJSON : String = resultsJSON.get("books").toString()
 
-                val models : List<BestSellerBook> = null // Fix me!
+                val models : List<BestSellerBook> = booksRawJSON.toList(); // Fix me!
                 recyclerView.adapter = BestSellerBooksRecyclerViewAdapter(models, this@BestSellerBooksFragment)
 
                 // Look for this in Logcat:
@@ -104,6 +107,7 @@ class BestSellerBooksFragment : Fragment(), OnListFragmentInteractionListener {
      */
     override fun onItemClick(item: BestSellerBook) {
         Toast.makeText(context, "test: " + item.title, Toast.LENGTH_LONG).show()
+
     }
 
 }
