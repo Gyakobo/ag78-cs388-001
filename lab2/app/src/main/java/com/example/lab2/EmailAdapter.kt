@@ -30,7 +30,7 @@ class EmailAdapter(private val emails: List<Email>): RecyclerView.Adapter<EmailA
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        TODO("Not yet implemented")
+        // TODO("Not yet implemented")
         val context = parent.context
         val inflater = LayoutInflater.from(context)
         // Inflate the custom layout
@@ -40,12 +40,12 @@ class EmailAdapter(private val emails: List<Email>): RecyclerView.Adapter<EmailA
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        // TODO("Not yet implemented")
         return emails.size;
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        // TODO("Not yet implemented")
         // Get the data model based on position
         val email = emails.get(position)
         // Set item views based on views and data model
