@@ -37,17 +37,22 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:textSize="22sp"
+        android:fontFamily="serif"
         />
 
     <ImageView
         android:id="@+id/book_image"
         android:layout_width="93dp"
         android:layout_height="96dp"
-        android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
+        android:layout_marginStart="15dp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/ranking"
         app:layout_constraintTop_toTopOf="@+id/ranking"
-        app:srcCompat="@android:drawable/ic_menu_gallery" />
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        android:contentDescription="Book Cover Image"
+        />
 
     <TextView
         android:id="@+id/book_description"
@@ -55,6 +60,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:text="book_description"
+        android:maxLines="4"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-light"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/book_author" />
 
@@ -65,6 +73,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="12dp"
         android:text="BUY ON AMAZON"
+        android:backgroundTint="#567b95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/book_description" />
 
