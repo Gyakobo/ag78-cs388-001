@@ -25,4 +25,7 @@ class BestSellerBook {
 
     @SerializedName("description")
     var description: String? = null
+
+    @SerializedName("amazon_product_url")
+    var amazonUrl: String? = null
 }
