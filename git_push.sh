@@ -1,6 +1,6 @@
 #!/bin/bash
 
-branch="lab3"
+branch="flixster"
 
 # Prompt the user for input
 echo "Currently operating on branch: $branch"
