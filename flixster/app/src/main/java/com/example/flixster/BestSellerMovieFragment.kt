@@ -23,7 +23,7 @@ import org.json.JSONObject
 // --------------------------------//
 // CHANGE THIS TO BE YOUR API KEY  //
 // --------------------------------//
-private const val API_KEY = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
+private const val API_KEY = "3184d2c7bfb87d2da34ad6df28b46b79"
 
 class BestSellerMovieFragment : Fragment(), OnListFragmentInteractionListener {
 
