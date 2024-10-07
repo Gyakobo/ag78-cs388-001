@@ -14,6 +14,7 @@ import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.RequestParams
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
 import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.reflect.TypeToken
+import com.google.gson.Gson
 import okhttp3.Headers
 import org.json.JSONObject
 
@@ -24,7 +25,7 @@ import org.json.JSONObject
 // --------------------------------//
 private const val API_KEY = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
 
-class BestSellerMovieFragment : Fragment(), OnListFragmentInteractionListener() {
+class BestSellerMovieFragment : Fragment(), OnListFragmentInteractionListener {
 
     /*
      * Constructing the view
@@ -76,7 +77,7 @@ class BestSellerMovieFragment : Fragment(), OnListFragmentInteractionListener() 
                     val arrayBookType = object : TypeToken<List<BestSellerMovie>>() {}.type
 
                     val models : List<BestSellerMovie> = gson.fromJson(booksRawJSON, arrayBookType); // Fix me!
-                    recyclerView.adapter = BestSellerMovieRecyclerViewAdapter(models, this@BestSellerMovieFragmentFragment)
+                    recyclerView.adapter = BestSellerMovieRecyclerViewAdapter(models, this@BestSellerMovieFragment)
 
                     // Look for this in Logcat:
                     Log.d("BestSellerBooksFragment", "response successful")

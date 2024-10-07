@@ -40,6 +40,8 @@ dependencies {
     implementation(libs.firebase.crashlytics.buildtools)
     annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
     implementation ("com.codepath.libraries:asynchttpclient:2.2.0")
+    implementation ("com.google.code.gson:gson:2.8.9")
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
