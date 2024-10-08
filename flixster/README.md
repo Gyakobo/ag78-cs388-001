@@ -33,7 +33,7 @@ Here's a walkthrough of implemented user stories:
 <img src='https://github.com/Gyakobo/ag78-cs388-001/blob/flixster/flixster/miscellaneous/Animation.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with [ScreenToGif](https://www.screentogif.com/) 
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
