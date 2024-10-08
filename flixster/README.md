@@ -30,7 +30,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/Gyakobo/ag78-cs388-001/blob/flixster/flixster/miscellaneous/Animation.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
@@ -41,7 +41,8 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+* Glide doesn't seem to work well with older version APIs
+* I had a lot of issues trying to figure out working API key and getting the right header on top of that
 
 ## License
 
