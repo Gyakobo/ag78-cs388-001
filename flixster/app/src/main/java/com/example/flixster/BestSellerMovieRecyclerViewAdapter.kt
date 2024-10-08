@@ -1,5 +1,6 @@
 package com.example.flixster
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 
 
 class BestSellerMovieRecyclerViewAdapter(
@@ -44,19 +46,15 @@ class BestSellerMovieRecyclerViewAdapter(
      */
     override fun onBindViewHolder(holder: BookViewHolder, position: Int) {
         val book = books[position]
-        book.bookImageUrl = "https://image.tmdb.org/t/p/w500/" + book.bookImageUrl;
 
         holder.mItem = book
-        holder.mBookTitle.text = book.title
-
-        // My adjustments
-
         holder.mBookTitle.text = book.title
         holder.mBookDescription.text = book.description
 
         Glide.with(holder.mView)
-            .load(book.bookImageUrl)
-            .centerInside()
+            .load("https://image.tmdb.org/t/p/w500${book.bookImageUrl}")
+            .placeholder(R.drawable.ic_launcher_background)  // Show while loading
+            .error(R.drawable.ic_launcher_foreground)          // Show on error
             .into(holder.mBookImage)
 
         holder.mView.setOnClickListener {
