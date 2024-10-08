@@ -5,7 +5,8 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="6dp">
+    android:layout_marginRight="12dp"
+    >
 
     <TextView
         android:id="@+id/book_title"
@@ -20,8 +21,8 @@
 
     <ImageView
         android:id="@+id/book_image"
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
+        android:layout_width="75dp"
+        android:layout_height="143dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
@@ -32,6 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:text="Description"
+        android:layout_margin="12dp"
         app:layout_constraintStart_toEndOf="@+id/book_image"
         app:layout_constraintTop_toBottomOf="@+id/book_title" />
 
