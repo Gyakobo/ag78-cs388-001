@@ -44,6 +44,7 @@ class BestSellerMovieRecyclerViewAdapter(
      */
     override fun onBindViewHolder(holder: BookViewHolder, position: Int) {
         val book = books[position]
+        book.bookImageUrl = "https://image.tmdb.org/t/p/w500/" + book.bookImageUrl;
 
         holder.mItem = book
         holder.mBookTitle.text = book.title

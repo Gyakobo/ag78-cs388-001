@@ -7,9 +7,9 @@ class BestSellerMovie {
     @SerializedName("title")
     var title: String? = null
 
-    @SerializedName("book_image")
+    @SerializedName("poster_path")
     var bookImageUrl: String? = null
 
-    @SerializedName("description")
+    @SerializedName("overview")
     var description: String? = null
 }

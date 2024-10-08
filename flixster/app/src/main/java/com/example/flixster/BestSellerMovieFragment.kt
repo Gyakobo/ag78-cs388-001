@@ -16,6 +16,7 @@ import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
 import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.reflect.TypeToken
 import com.google.gson.Gson
 import okhttp3.Headers
+import org.json.JSONArray
 import org.json.JSONObject
 
 // import com.codepath.bestsellerlistapp.R
@@ -52,26 +53,34 @@ class BestSellerMovieFragment : Fragment(), OnListFragmentInteractionListener {
 
         // Create and set up an AsyncHTTPClient() here
         val client = AsyncHttpClient()
+        // Headers.addHeader("Authorization", "Bearer " + API_KEY);
+        // client.addHeader("accept", "application/json");
+
         val params = RequestParams()
-        params["api-key"] = API_KEY
+        params["api_key"] = API_KEY
 
         // Using the client, perform the HTTP request
         client[
             "https://api.themoviedb.org/3/movie/now_playing",
+            // "https://api.themoviedb.org/3/movie/now_playing?&api_key=3184d2c7bfb87d2da34ad6df28b46b79",
             params,
             object : JsonHttpResponseHandler()
             { //connect these callbacks to your API call
                 override fun onSuccess(
                     statusCode: Int,
                     headers: Headers,
-                    json: JsonHttpResponseHandler.JSON
+                    json: JSON
                 ) {
                     // The wait for a response is over
                     progressBar.hide()
 
                     //TODO - Parse JSON into Models
-                    val resultsJSON : JSONObject = json.jsonObject.get("results") as JSONObject
-                    val booksRawJSON : String = resultsJSON.get("books").toString()
+                    // val resultsJSON : JSONObject = json.jsonObject.get("results") as JSONObject
+                    // val booksRawJSON : String = resultsJSON.get("books").toString()
+
+                    val booksRawJSON : String = (json.jsonObject.get("results") as JSONArray).toString()
+
+                    Log.d("BestSellerMovieFragment", json.toString());
 
                     val gson = Gson()
                     val arrayBookType = object : TypeToken<List<BestSellerMovie>>() {}.type
@@ -80,7 +89,7 @@ class BestSellerMovieFragment : Fragment(), OnListFragmentInteractionListener {
                     recyclerView.adapter = BestSellerMovieRecyclerViewAdapter(models, this@BestSellerMovieFragment)
 
                     // Look for this in Logcat:
-                    Log.d("BestSellerBooksFragment", "response successful")
+                    Log.d("BestSellerMovieFragment", "response successful")
                 }
 
                 /*
@@ -98,7 +107,7 @@ class BestSellerMovieFragment : Fragment(), OnListFragmentInteractionListener {
 
                     // If the error is not null, log it!
                     t?.message?.let {
-                        Log.e("BestSellerBooksFragment", errorResponse)
+                        Log.e("BestSellerMovieFragment", errorResponse)
                     }
                 }
             }]
