@@ -44,7 +44,7 @@ Describe any challenges encountered while building the app. <!-- Replace this wi
 ## License
 
 ```plaintext
-    Copyright [2024] [Andrew Gyakobo]
+    Copyright 2024 Andrew Gyakobo
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
