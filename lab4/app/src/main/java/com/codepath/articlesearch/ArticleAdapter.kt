@@ -31,10 +31,11 @@ class ArticleAdapter(private val context: Context, private val articles: List<Ar
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        // TODO: Get the individual article and bind to holder
+        val article = articles[position]
+        holder.bind(article)
     }
 
-    override fun getItemCount() = 0
+    override fun getItemCount() = articles.size
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
         View.OnClickListener {
@@ -51,8 +52,12 @@ class ArticleAdapter(private val context: Context, private val articles: List<Ar
 
         override fun onClick(v: View?) {
             // TODO: Get selected article
+            val article = articles[absoluteAdapterPosition]
 
             // TODO: Navigate to Details screen and pass selected article
+            val intent = Intent(context, DetailActivity::class.java)
+            intent.putExtra(ARTICLE_EXTRA, article)
+            context.startActivity(intent)
         }
     }
 }
