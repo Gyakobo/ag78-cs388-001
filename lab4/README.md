@@ -14,14 +14,14 @@ Time spent: **4** hours spent in total <!-- Replace 'X' with the number of hours
 
 The following **required** functionality is completed:
 
-- [*] (3 pts) **Articles are displayed using the RecyclerView.**
-  - ![Image/GIF showing RecyclerView implementation](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
+- [x] (3 pts) **Articles are displayed using the RecyclerView.**
+  - ![Image/GIF showing RecyclerView implementation](https://github.com/Gyakobo/ag78-cs388-001/blob/lab4/lab4/miscellaneous/animation.gif) <!-- Replace this link with your actual image/GIF link -->
 
-- [*] (4 pts) **Can navigate to the Article Details screen.**
-  - ![Image/GIF showing Article Details screen](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
+- [x] (4 pts) **Can navigate to the Article Details screen.**
+  - ![Image/GIF showing Article Details screen](https://github.com/Gyakobo/ag78-cs388-001/blob/lab4/lab4/miscellaneous/animation.gif) <!-- Replace this link with your actual image/GIF link -->
 
-- [*] (3 pts) **Article images are downloaded and displayed using Glide.**
-  - ![Image/GIF showing Glide usage](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
+- [x] (3 pts) **Article images are downloaded and displayed using Glide.**
+  - ![Image/GIF showing Glide usage](https://github.com/Gyakobo/ag78-cs388-001/blob/lab4/lab4/miscellaneous/animation.gif) <!-- Replace this link with your actual image/GIF link -->
 
 ### Stretch Features
 
