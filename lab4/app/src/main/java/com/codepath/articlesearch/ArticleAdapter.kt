@@ -16,18 +16,10 @@ private const val TAG = "ArticleAdapter"
 class ArticleAdapter(private val context: Context, private val articles: List<Article>) :
     RecyclerView.Adapter<ArticleAdapter.ViewHolder>() {
 
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.item_article, parent, false)
         return ViewHolder(view)
-    }
-
-    fun bind(article: Article) {
-        titleTextView.text = article.headline?.main
-        abstractTextView.text = article.abstract
-
-        Glide.with(context)
-            .load(article.mediaImageUrl)
-            .into(mediaImageView)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -43,6 +35,15 @@ class ArticleAdapter(private val context: Context, private val articles: List<Ar
         private val mediaImageView = itemView.findViewById<ImageView>(R.id.mediaImage)
         private val titleTextView = itemView.findViewById<TextView>(R.id.mediaTitle)
         private val abstractTextView = itemView.findViewById<TextView>(R.id.mediaAbstract)
+
+        fun bind(article: Article) {
+            titleTextView.text = article.headline?.main
+            abstractTextView.text = article.abstract
+
+            Glide.with(context)
+                .load(article.mediaImageUrl)
+                .into(mediaImageView)
+        }
 
         init {
             itemView.setOnClickListener(this)
