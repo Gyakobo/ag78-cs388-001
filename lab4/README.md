@@ -14,13 +14,13 @@ Time spent: **4** hours spent in total <!-- Replace 'X' with the number of hours
 
 The following **required** functionality is completed:
 
-- [ ] (3 pts) **Articles are displayed using the RecyclerView.**
+- [*] (3 pts) **Articles are displayed using the RecyclerView.**
   - ![Image/GIF showing RecyclerView implementation](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
 
-- [ ] (4 pts) **Can navigate to the Article Details screen.**
+- [*] (4 pts) **Can navigate to the Article Details screen.**
   - ![Image/GIF showing Article Details screen](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
 
-- [ ] (3 pts) **Article images are downloaded and displayed using Glide.**
+- [*] (3 pts) **Article images are downloaded and displayed using Glide.**
   - ![Image/GIF showing Glide usage](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
 
 ### Stretch Features
