@@ -1,1 +1,0 @@
-private const val API_KEY = "3184d2c7bfb87d2da34ad6df28b46b79"
