@@ -7,6 +7,23 @@ import kotlinx.serialization.Serializable
 @Keep
 @Serializable
 data class SearchNewsResponse(
+    @SerialName("results")
+    val response: List<Article>?
+)
+
+@Keep
+@Serializable
+data class Article(
+    @SerialName("name")
+    val name: String?
+): java.io.Serializable {
+    val mediaImageUrl = "https://www.nytimes.com/${multimedia?.firstOrNull { it.url != null }?.url ?: ""}"
+}
+/////////////////////////////////////
+
+@Keep
+@Serializable
+data class SearchNewsResponse(
     @SerialName("response")
     val response: BaseResponse?
 )
