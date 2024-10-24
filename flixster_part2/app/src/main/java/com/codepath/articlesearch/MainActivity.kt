@@ -73,7 +73,12 @@ class MainActivity : AppCompatActivity() {
                     )
 
                     // TODO: Save the articles and reload the screen
-                    parsedJson.response?.docs?.let { list ->
+                    /*parsedJson.response?.docs?.let { list ->
+                        articles.addAll(list)
+                        articleAdapter.notifyDataSetChanged()
+                    }*/
+
+                    parsedJson.results?.let { list ->
                         articles.addAll(list)
                         articleAdapter.notifyDataSetChanged()
                     }
