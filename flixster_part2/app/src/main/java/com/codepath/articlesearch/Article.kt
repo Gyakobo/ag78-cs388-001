@@ -13,14 +13,25 @@ data class SearchNewsResponse(
 
 @Keep
 @Serializable
+data class Media(
+    @SerialName("poster_path")
+    val url: String?
+) : java.io.Serializable
+
+@Keep
+@Serializable
 data class Article(
     @SerialName("name")
-    val name: String?
+    val name: String?,
+    @SerialName("known_for")
+    val multimedia: List<Media>?,
 ): java.io.Serializable {
-    val mediaImageUrl = "https://www.nytimes.com/${multimedia?.firstOrNull { it.url != null }?.url ?: ""}"
+    val mediaImageUrl = "https://image.tmdb.org/t/p/w500/${multimedia?.firstOrNull { it.url != null }?.url ?: ""}"
+    // val mediaImageUrl = "https://www.nytimes.com/${multimedia?.firstOrNull { it.url != null }?.url ?: ""}"
 }
 /////////////////////////////////////
 
+/*
 @Keep
 @Serializable
 data class SearchNewsResponse(
@@ -70,4 +81,4 @@ data class MultiMedia(
     @SerialName("url")
     val url: String?
 ) : java.io.Serializable
-
+*/
