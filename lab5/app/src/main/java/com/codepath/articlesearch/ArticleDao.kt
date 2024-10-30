@@ -1,4 +1,5 @@
 package com.codepath.articlesearch
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface ArticleDao {
