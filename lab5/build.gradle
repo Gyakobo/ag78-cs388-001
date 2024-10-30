@@ -4,8 +4,15 @@ plugins {
     id 'com.android.library' version '7.2.1' apply false
     id 'org.jetbrains.kotlin.android' version '1.7.10' apply false
     id 'org.jetbrains.kotlin.plugin.serialization' version '1.7.10'
+
+    // id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    // id 'org.jetbrains.kotlin.plugin.serialization'
+    id 'kotlin-kapt'
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+

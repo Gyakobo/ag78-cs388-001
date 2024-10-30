@@ -1,21 +1,6 @@
-plugins {
-    id 'com.android.application'
-    id 'kotlin-android'
-    id 'kotlin-parcelize'
-    id 'org.jetbrains.kotlin.plugin.serialization'
-    id 'kotlin-kapt'
-}
-
 def apikeyPropertiesFile = rootProject.file("apikey.properties")
 def apikeyProperties = new Properties()
 apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
-
-def room_version = "2.4.2"
-implementation "androidx.room:room-runtime:$room_version"
-implementation "androidx.room:room-ktx:$room_version"
-annotationProcessor "androidx.room:room-compiler:$room_version"
-kapt "androidx.room:room-compiler:$room_version"
-implementation 'androidx.fragment:fragment-ktx:1.5.0'
 
 android {
     compileSdk 32
@@ -52,7 +37,16 @@ android {
     }
 }
 
+
 dependencies {
+    def room_version = "2.4.2"
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation 'androidx.fragment:fragment-ktx:1.5.0'
+
+
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.7.10'
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.4.2'
