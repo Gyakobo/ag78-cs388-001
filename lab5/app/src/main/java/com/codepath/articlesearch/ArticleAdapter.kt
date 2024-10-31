@@ -13,7 +13,7 @@ import com.bumptech.glide.Glide
 const val ARTICLE_EXTRA = "ARTICLE_EXTRA"
 private const val TAG = "ArticleAdapter"
 
-class ArticleAdapter(private val context: Context, private val articles: List<Article>) :
+class ArticleAdapter(private val context: Context, private val articles: List<DisplayArticle>) :
     RecyclerView.Adapter<ArticleAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -22,8 +22,8 @@ class ArticleAdapter(private val context: Context, private val articles: List<Ar
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val article = articles[position]
-        holder.bind(article)
+        val displayArticle = articles[position]
+        holder.bind(displayArticle)
     }
 
     override fun getItemCount() = articles.size
@@ -39,8 +39,8 @@ class ArticleAdapter(private val context: Context, private val articles: List<Ar
             itemView.setOnClickListener(this)
         }
 
-        fun bind(article: Article) {
-            titleTextView.text = article.headline?.main
+        fun bind(article: DisplayArticle) {
+            titleTextView.text = article.headline.toString()
             abstractTextView.text = article.abstract
 
             Glide.with(context)
