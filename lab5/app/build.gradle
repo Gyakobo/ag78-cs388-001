@@ -11,10 +11,9 @@ def apikeyProperties = new Properties()
 apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
 
 android {
-    compileSdk 32
+    compileSdk 34
 
     defaultConfig {
-        applicationId "com.codepath.articlesearch"
         minSdk 23
         targetSdk 33
         versionCode 1
@@ -26,6 +25,7 @@ android {
     }
 
     buildTypes {
+        android.buildFeatures.buildConfig true
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
