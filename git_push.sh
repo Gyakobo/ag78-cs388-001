@@ -1,6 +1,6 @@
 #!/bin/bash
 
-branch="lab5"
+branch="BitFit"
 
 # Prompt the user for input
 echo "Currently operating on branch: $branch"
