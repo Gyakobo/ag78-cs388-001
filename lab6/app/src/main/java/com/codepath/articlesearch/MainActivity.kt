@@ -19,6 +19,7 @@ fun createJson() = Json {
     useAlternativeNames = false
 }
 
+// fIn3lXAdkT6mSwB5dEhhQWzX1Mp8jVxp - api key
 private const val TAG = "MainActivity/"
 private const val SEARCH_API_KEY = BuildConfig.API_KEY
 private const val ARTICLE_SEARCH_URL =
