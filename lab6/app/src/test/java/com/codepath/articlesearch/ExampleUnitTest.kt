@@ -1,4 +1,4 @@
-package com.example.lab6
+package com.codepath.articlesearch
 
 import org.junit.Test
 
