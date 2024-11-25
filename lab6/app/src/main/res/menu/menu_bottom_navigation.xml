@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
+    <!--<item
         android:id="@+id/action_favorites"
         android:enabled="true"
         android:icon="@drawable/baseline_menu_book_24"
@@ -12,5 +12,16 @@
         android:enabled="true"
         android:icon="@drawable/baseline_article_24"
         android:title="Articles"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="ifRoom" />-->
+
+    <item
+        android:id="@+id/nav_books"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="Books" />
+
+    <item
+        android:id="@+id/nav_articles"
+        android:icon="@drawable/ic_baseline_article_24"
+        android:title="Articles" />
+
 </menu>

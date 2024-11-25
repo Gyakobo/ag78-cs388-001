@@ -28,6 +28,14 @@ private const val TAG = "MainActivity/"
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
+
+    private fun replaceFragment(articleListFragment: ArticleListFragment) {
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.article_frame_layout, articleListFragment)
+        fragmentTransaction.commit()
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -51,7 +59,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_articles -> fragment = articleListFragment
             }
             replaceFragment(fragment)
-            true
+            true // <- no clue why this is here
         }
 
         // Set default selection
