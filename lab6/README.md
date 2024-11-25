@@ -14,15 +14,15 @@ Time spent: **X** hours spent in total <!-- Replace 'X' with the number of hours
 
 The following **required** functionality is completed:
 
-- [*] (3 pts) **Add and implement Bottom Navigation to your application**
+- [x] (3 pts) **Add and implement Bottom Navigation to your application**
   - Allows navigation between books and articles using Bottom Navigation.
   - ![GIF showing Bottom Navigation functionality](https://github.com/Gyakobo/ag78-cs388-001/blob/lab6/lab6/miscellaneous/bottomnavigation.gif) <!-- Replace this link with your actual image/GIF link -->
 
-- [*] (4 pts) **Dynamically use fragments within Activities**
+- [x] (4 pts) **Dynamically use fragments within Activities**
   - Displays books and articles in their respective fragments, dynamically managed within the main activity.
   - ![GIF showing fragment management](https://github.com/Gyakobo/ag78-cs388-001/blob/lab6/lab6/miscellaneous/dynamicfragment.gif) <!-- Replace this link with your actual image/GIF link -->
 
-- [*] (3 pts) **Customize the toolbar and icons**
+- [x] (3 pts) **Customize the toolbar and icons**
   - Provides a unique toolbar experience for each section with relevant icons.
   - ![GIF showing toolbar customization](https://github.com/Gyakobo/ag78-cs388-001/blob/lab6/lab6/miscellaneous/dynamicfragment.gif) <!-- Replace this link with your actual image/GIF link -->
 
