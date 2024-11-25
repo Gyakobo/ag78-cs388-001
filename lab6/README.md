@@ -20,11 +20,11 @@ The following **required** functionality is completed:
 
 - [*] (4 pts) **Dynamically use fragments within Activities**
   - Displays books and articles in their respective fragments, dynamically managed within the main activity.
-  - ![GIF showing fragment management]() <!-- Replace this link with your actual image/GIF link -->
+  - ![GIF showing fragment management](https://github.com/Gyakobo/ag78-cs388-001/blob/lab6/lab6/miscellaneous/dynamicfragment.gif) <!-- Replace this link with your actual image/GIF link -->
 
 - [*] (3 pts) **Customize the toolbar and icons**
   - Provides a unique toolbar experience for each section with relevant icons.
-  - ![GIF showing toolbar customization]() <!-- Replace this link with your actual image/GIF link -->
+  - ![GIF showing toolbar customization](https://github.com/Gyakobo/ag78-cs388-001/blob/lab6/lab6/miscellaneous/dynamicfragment.gif) <!-- Replace this link with your actual image/GIF link -->
 
 ### Stretch Features
 
