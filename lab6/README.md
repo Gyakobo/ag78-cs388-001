@@ -16,7 +16,7 @@ The following **required** functionality is completed:
 
 - [*] (3 pts) **Add and implement Bottom Navigation to your application**
   - Allows navigation between books and articles using Bottom Navigation.
-  - ![GIF showing Bottom Navigation functionality]() <!-- Replace this link with your actual image/GIF link -->
+  - ![GIF showing Bottom Navigation functionality](https://github.com/Gyakobo/ag78-cs388-001/blob/lab6/lab6/miscellaneous/bottomnavigation.gif) <!-- Replace this link with your actual image/GIF link -->
 
 - [*] (4 pts) **Dynamically use fragments within Activities**
   - Displays books and articles in their respective fragments, dynamically managed within the main activity.
