@@ -16,15 +16,15 @@ The following **required** functionality is completed:
 
 - [*] (3 pts) **Add and implement Bottom Navigation to your application**
   - Allows navigation between books and articles using Bottom Navigation.
-  - ![GIF showing Bottom Navigation functionality](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
+  - ![GIF showing Bottom Navigation functionality]() <!-- Replace this link with your actual image/GIF link -->
 
 - [*] (4 pts) **Dynamically use fragments within Activities**
   - Displays books and articles in their respective fragments, dynamically managed within the main activity.
-  - ![GIF showing fragment management](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
+  - ![GIF showing fragment management]() <!-- Replace this link with your actual image/GIF link -->
 
 - [*] (3 pts) **Customize the toolbar and icons**
   - Provides a unique toolbar experience for each section with relevant icons.
-  - ![GIF showing toolbar customization](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
+  - ![GIF showing toolbar customization]() <!-- Replace this link with your actual image/GIF link -->
 
 ### Stretch Features
 
