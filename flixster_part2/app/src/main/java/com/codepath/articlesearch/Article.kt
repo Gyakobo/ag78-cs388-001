@@ -7,6 +7,28 @@ import kotlinx.serialization.Serializable
 @Keep
 @Serializable
 data class SearchNewsResponse(
+    @SerialName("results")
+    val results: List<Article>?
+)
+
+@Keep
+@Serializable
+data class Article(
+    @SerialName("name")
+    val headline: String? = null,
+
+    // abstract
+    @SerialName("overview")
+    val abstract: String? = null,
+
+    @SerialName("profile_path")
+    val multimedia: String? = null,
+) : java.io.Serializable
+
+/*
+@Keep
+@Serializable
+data class SearchNewsResponse(
     @SerialName("response")
     val response: BaseResponse?
 )
@@ -53,4 +75,4 @@ data class MultiMedia(
     @SerialName("url")
     val url: String?
 ) : java.io.Serializable
-
+*/

@@ -2,6 +2,7 @@ package com.codepath.articlesearch
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +10,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+
+import androidx.core.content.ContextCompat.startActivity
 
 const val ARTICLE_EXTRA = "ARTICLE_EXTRA"
 private const val TAG = "ArticleAdapter"
@@ -34,14 +37,16 @@ class ArticleAdapter(private val context: Context, private val articles: List<Ar
 
         private val mediaImageView = itemView.findViewById<ImageView>(R.id.mediaImage)
         private val titleTextView = itemView.findViewById<TextView>(R.id.mediaTitle)
-        private val abstractTextView = itemView.findViewById<TextView>(R.id.mediaAbstract)
+        // private val abstractTextView = itemView.findViewById<TextView>(R.id.mediaAbstract)
 
         fun bind(article: Article) {
-            titleTextView.text = article.headline?.main
-            abstractTextView.text = article.abstract
+            titleTextView.text = article.headline
+            // abstractTextView.text = article.abstract
 
             Glide.with(context)
-                .load(article.mediaImageUrl)
+                .load("https://image.tmdb.org/t/p/w500${article.multimedia}")
+                .placeholder(R.drawable.ic_launcher_background)
+                .error(R.drawable.ic_launcher_foreground)
                 .into(mediaImageView)
         }
 
@@ -52,10 +57,8 @@ class ArticleAdapter(private val context: Context, private val articles: List<Ar
         // TODO: Write a helper method to help set up the onBindViewHolder method
 
         override fun onClick(v: View?) {
-            // TODO: Get selected article
             val article = articles[absoluteAdapterPosition]
 
-            // TODO: Navigate to Details screen and pass selected article
             val intent = Intent(context, DetailActivity::class.java)
             intent.putExtra(ARTICLE_EXTRA, article)
             context.startActivity(intent)

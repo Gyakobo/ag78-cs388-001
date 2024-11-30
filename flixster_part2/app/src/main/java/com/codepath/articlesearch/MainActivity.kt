@@ -22,7 +22,8 @@ fun createJson() = Json {
 
 private const val TAG = "MainActivity/"
 private const val SEARCH_API_KEY = API_KEY
-private const val ARTICLE_SEARCH_URL = "https://api.themoviedb.org/3/movie/now_playing?&api_key=api_key=${SEARCH_API_KEY}"
+private const val ARTICLE_SEARCH_URL = "https://api.themoviedb.org/3/person/popular?api_key=${SEARCH_API_KEY}"
+// private const val ARTICLE_SEARCH_URL = "https://api.themoviedb.org/3/movie/now_playing?&api_key=${SEARCH_API_KEY}"
 // private const val ARTICLE_SEARCH_URL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=${SEARCH_API_KEY}"
 
 class MainActivity : AppCompatActivity() {
@@ -72,7 +73,7 @@ class MainActivity : AppCompatActivity() {
                     )
 
                     // TODO: Save the articles and reload the screen
-                    parsedJson.response?.docs?.let { list ->
+                    parsedJson.results?.let { list ->
                         articles.addAll(list)
                         articleAdapter.notifyDataSetChanged()
                     }
