@@ -1,0 +1,87 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.codepath.articlesearch"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:6:5-67
+11-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:6:22-64
+12
+13    <application
+13-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:8:5-29:19
+14        android:allowBackup="true"
+14-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:9:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.8.0] C:\Users\andyg\.gradle\caches\transforms-3\8009c6ffa36efd1b8a797cfae7212072\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+16        android:dataExtractionRules="@xml/data_extraction_rules"
+16-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:10:9-65
+17        android:debuggable="true"
+18        android:extractNativeLibs="false"
+19        android:fullBackupContent="@xml/backup_rules"
+19-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:11:9-54
+20        android:icon="@mipmap/ic_launcher"
+20-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:12:9-43
+21        android:label="@string/app_name"
+21-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:13:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:14:9-54
+23        android:supportsRtl="true"
+23-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:15:9-35
+24        android:testOnly="true"
+25        android:theme="@style/Theme.ArticleSearch" >
+25-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:16:9-51
+26        <activity
+26-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:18:9-19:39
+27            android:name="com.codepath.articlesearch.DetailActivity"
+27-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:18:19-49
+28            android:exported="true" />
+28-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:19:13-36
+29        <activity
+29-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:20:9-28:20
+30            android:name="com.codepath.articlesearch.MainActivity"
+30-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:21:13-41
+31            android:exported="true" >
+31-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:22:13-36
+32            <intent-filter>
+32-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:23:13-27:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:24:17-69
+33-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:24:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:26:17-77
+35-->C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab6\app\src\main\AndroidManifest.xml:26:27-74
+36            </intent-filter>
+37        </activity>
+38
+39        <provider
+39-->[androidx.emoji2:emoji2:1.0.0] C:\Users\andyg\.gradle\caches\transforms-3\b63c5e4117711397944d53a61d27b99d\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+40            android:name="androidx.startup.InitializationProvider"
+40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\andyg\.gradle\caches\transforms-3\b63c5e4117711397944d53a61d27b99d\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+41            android:authorities="com.codepath.articlesearch.androidx-startup"
+41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\andyg\.gradle\caches\transforms-3\b63c5e4117711397944d53a61d27b99d\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+42            android:exported="false" >
+42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\andyg\.gradle\caches\transforms-3\b63c5e4117711397944d53a61d27b99d\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+43            <meta-data
+43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\andyg\.gradle\caches\transforms-3\b63c5e4117711397944d53a61d27b99d\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+44                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\andyg\.gradle\caches\transforms-3\b63c5e4117711397944d53a61d27b99d\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+45                android:value="androidx.startup" />
+45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\andyg\.gradle\caches\transforms-3\b63c5e4117711397944d53a61d27b99d\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+46            <meta-data
+46-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\andyg\.gradle\caches\transforms-3\845c23038b39273ff64cb798fa32dfef\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+47                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+47-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\andyg\.gradle\caches\transforms-3\845c23038b39273ff64cb798fa32dfef\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+48                android:value="androidx.startup" />
+48-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\andyg\.gradle\caches\transforms-3\845c23038b39273ff64cb798fa32dfef\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+49        </provider>
+50    </application>
+51
+52</manifest>

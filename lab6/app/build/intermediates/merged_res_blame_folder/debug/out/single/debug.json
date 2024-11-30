@@ -1,0 +1,110 @@
+[
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\drawable_baseline_article_24.xml.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\drawable\\baseline_article_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\layout_fragment_best_seller_books_list.xml.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\layout\\fragment_best_seller_books_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\layout_item_article.xml.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\layout\\item_article.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-pngs-24:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.codepath.articlesearch.app-merged_res-29:/menu_menu_bottom_navigation.xml.flat",
+        "source": "com.codepath.articlesearch.app-main-31:/menu/menu_bottom_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\menu_bottom_navigation_menu.xml.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\menu\\bottom_navigation_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\layout_fragment_article_list.xml.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\layout\\fragment_article_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\menu_menu_bottom_navigation.xml.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\menu\\menu_bottom_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\drawable_baseline_menu_book_24.xml.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\drawable\\baseline_menu_book_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\layout_fragment_best_seller_book.xml.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\layout\\fragment_best_seller_book.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-merged_res-29:\\layout_activity_detail.xml.flat",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\layout\\activity_detail.xml"
+    }
+]

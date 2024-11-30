@@ -1,0 +1,4 @@
+com.codepath.articlesearch.test.app-androidTest-0 C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab5\app\build\generated\res\resValues\androidTest\debug
+com.codepath.articlesearch.test.app-mergeDebugAndroidTestResources-1 C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab5\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.codepath.articlesearch.test.app-mergeDebugAndroidTestResources-2 C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab5\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.codepath.articlesearch.test.app-debugAndroidTest-3 C:\Users\andyg\Documents\cs388\ag78-cs388-001\lab5\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

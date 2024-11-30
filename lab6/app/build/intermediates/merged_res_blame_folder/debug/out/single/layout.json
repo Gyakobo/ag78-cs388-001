@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-mergeDebugResources-28:\\layout\\fragment_best_seller_book.xml",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\layout\\fragment_best_seller_book.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-mergeDebugResources-28:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-mergeDebugResources-28:\\layout\\fragment_best_seller_books_list.xml",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\layout\\fragment_best_seller_books_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-mergeDebugResources-28:\\layout\\item_article.xml",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\layout\\item_article.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-mergeDebugResources-28:\\layout\\fragment_article_list.xml",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\layout\\fragment_article_list.xml"
+    },
+    {
+        "merged": "com.codepath.articlesearch.app-mergeDebugResources-28:/layout/activity_main.xml",
+        "source": "com.codepath.articlesearch.app-main-31:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-mergeDebugResources-28:\\layout\\activity_detail.xml",
+        "source": "C:\\Users\\andyg\\.gradle\\daemon\\7.3.3\\com.codepath.articlesearch.app-main-31:\\layout\\activity_detail.xml"
+    }
+]
