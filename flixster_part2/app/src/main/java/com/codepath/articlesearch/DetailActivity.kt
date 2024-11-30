@@ -11,7 +11,7 @@ private const val TAG = "DetailActivity"
 class DetailActivity : AppCompatActivity() {
     private lateinit var mediaImageView: ImageView
     private lateinit var titleTextView: TextView
-    // private lateinit var bylineTextView: TextView
+    private lateinit var bylineTextView: TextView
     private lateinit var abstractTextView: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,18 +19,18 @@ class DetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail)
 
         // TODO: Find the views for the screen
-        mediaImageView = findViewById(R.id.mediaImage)
-        titleTextView = findViewById(R.id.mediaTitle)
-        // bylineTextView = findViewById(R.id.mediaByline)
-        abstractTextView = findViewById(R.id.mediaAbstract)
+        mediaImageView =    findViewById(R.id.mediaImage)
+        titleTextView =     findViewById(R.id.mediaTitle)
+        bylineTextView =    findViewById(R.id.mediaByline)
+        abstractTextView =  findViewById(R.id.mediaAbstract)
 
         // TODO: Get the extra from the Intent
         val article = intent.getSerializableExtra(ARTICLE_EXTRA) as Article
 
         // TODO: Set the title, byline, and abstract information from the article
         titleTextView.text = article.headline
-        // bylineTextView.text = article.byline?.original
-        abstractTextView.text = article.abstract
+        bylineTextView.text = "Known For: ${article.films?.get(0)?.movie_tile}"
+        abstractTextView.text = article.films?.get(0)?.movie_overview
 
         // TODO: Load the media image
         Glide.with(this)

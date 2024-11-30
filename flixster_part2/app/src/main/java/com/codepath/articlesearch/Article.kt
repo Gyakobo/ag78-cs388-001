@@ -17,13 +17,28 @@ data class Article(
     @SerialName("name")
     val headline: String? = null,
 
-    // abstract
-    @SerialName("overview")
-    val abstract: String? = null,
-
     @SerialName("profile_path")
     val multimedia: String? = null,
+    // abstract
+
+    @SerialName("known_for")
+    val films: List<known_for>?
 ) : java.io.Serializable
+
+@Keep
+@Serializable
+data class known_for (
+    // Picture of film
+    @SerialName("backdrop_path")
+    val backdrop_path: String? = null,
+
+    @SerialName("title")
+    val movie_tile: String? = null,
+
+    @SerialName("overview")
+    val movie_overview: String? = null,
+) : java.io.Serializable
+
 
 /*
 @Keep
