@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/Gyakobo/ag78-cs388-001/blob/lab5/lab5/miscellaneous/animation.mp4' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/Gyakobo/ag78-cs388-001/blob/lab5/lab5/miscellaneous/lab5-gif.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows  
