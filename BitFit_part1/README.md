@@ -11,7 +11,7 @@ Time spent: **2** hours spent in total
 The following **required** functionality is completed:
 
 - [x] **At least one health metric is tracked (based on user input)**
-  - Chosen metric(s): `[TODO: FILL ME IN TO GET CREDIT]`
+  - Chosen metric(s): **The App showcases the adjusted calories beside the food identified**
 - [x] **There is a "create entry" UI that prompts users to make their daily entry**
 - [x] **New entries are saved in a database and then updated in the RecyclerView**
 - [x] **On application restart, previously entered entries are preserved (i.e., are *persistent*)**
@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with [ScreenToGif](https://www.screentogif.com/)  
