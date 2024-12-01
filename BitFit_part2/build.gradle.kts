@@ -4,7 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.android) apply false
 }
 
-buildscript {
+/*buildscript {
     repositories {
         google()
         mavenCentral()
@@ -13,4 +13,4 @@ buildscript {
         classpath "com.android.tools.build:gradle:8.0.0" // Or your current version
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0" // Or your current Kotlin version
     }
-}
+}*/
