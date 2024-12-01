@@ -29,7 +29,7 @@ data class Article(
 @Serializable
 data class known_for (
     // Picture of film
-    @SerialName("backdrop_path")
+    @SerialName("poster_path")
     val backdrop_path: String? = null,
 
     @SerialName("title")

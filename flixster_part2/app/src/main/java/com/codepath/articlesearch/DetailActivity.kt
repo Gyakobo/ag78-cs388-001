@@ -10,6 +10,7 @@ private const val TAG = "DetailActivity"
 
 class DetailActivity : AppCompatActivity() {
     private lateinit var mediaImageView: ImageView
+    private lateinit var mediaImageView_1: ImageView
     private lateinit var titleTextView: TextView
     private lateinit var bylineTextView: TextView
     private lateinit var abstractTextView: TextView
@@ -20,6 +21,7 @@ class DetailActivity : AppCompatActivity() {
 
         // TODO: Find the views for the screen
         mediaImageView =    findViewById(R.id.mediaImage)
+        mediaImageView_1 =    findViewById(R.id.mediaImage_1)
         titleTextView =     findViewById(R.id.mediaTitle)
         bylineTextView =    findViewById(R.id.mediaByline)
         abstractTextView =  findViewById(R.id.mediaAbstract)
@@ -38,5 +40,11 @@ class DetailActivity : AppCompatActivity() {
             .placeholder(R.drawable.ic_launcher_background)
             .error(R.drawable.ic_launcher_foreground)
             .into(mediaImageView)
+
+        Glide.with(this)
+            .load("https://image.tmdb.org/t/p/w500${article.films?.get(0)?.backdrop_path}")
+            .placeholder(R.drawable.ic_launcher_background)
+            .error(R.drawable.ic_launcher_foreground)
+            .into(mediaImageView_1)
     }
 }
