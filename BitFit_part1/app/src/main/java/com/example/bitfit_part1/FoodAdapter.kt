@@ -1,17 +1,21 @@
-package com.example.bitfit_pat1
+package com.example.bitfit_part1
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-// import kotlinx.android.synthetic.main.item_food.view.*
 
 class FoodAdapter(private val foodList: List<FoodItem>) : RecyclerView.Adapter<FoodAdapter.FoodViewHolder>() {
 
+    // Inner class for the ViewHolder
     inner class FoodViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val foodName: TextView = itemView.findViewById(R.id.foodName) // Reference to the food name TextView
+        val foodCalories: TextView = itemView.findViewById(R.id.foodCalories) // Reference to the calorie TextView
+
         fun bind(foodItem: FoodItem) {
-            itemView.foodName.text = foodItem.name
-            itemView.foodCalories.text = "${foodItem.calories} Calories"
+            foodName.text = foodItem.name
+            foodCalories.text = "${foodItem.calories} Calories"
         }
     }
 

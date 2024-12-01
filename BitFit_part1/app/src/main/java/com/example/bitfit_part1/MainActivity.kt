@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import android.widget.Button
-import com.example.bitfit_pat1.FoodAdapter
 
 class MainActivity : AppCompatActivity() {
 
