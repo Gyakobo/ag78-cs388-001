@@ -1,6 +1,6 @@
 #!/bin/bash
 
-branch="bitfit_part1"
+branch="bitfit_part2"
 
 # Prompt the user for input
 echo "Currently operating on branch: $branch"
