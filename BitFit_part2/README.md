@@ -19,7 +19,7 @@ The following **optional** features are implemented:
 - [x] **Add a more advanced UI (e.g: Graphing) for tracking trends in metrics**
 - [x] **Implement daily notifications to prompt users to fill in their data**
 
-<img src='image.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./miscellaneous/image.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 The following **additional** features are implemented:
 
@@ -29,7 +29,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='animation.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./miscellaneous/animation.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
